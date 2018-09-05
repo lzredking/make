@@ -1,4 +1,4 @@
-package com.xim.ms.mkcode.utils;
+package com.xx.ms.mkcode.utils;
 
 import java.io.StringWriter;
 import java.util.Properties;
@@ -8,7 +8,7 @@ import org.apache.velocity.VelocityContext;
 import org.apache.velocity.app.Velocity;
 import org.apache.velocity.app.VelocityEngine;
 
-import com.xim.ms.mkcode.utils.FileUtils;
+import com.xx.ms.mkcode.utils.FileUtils;
 /**
  * 简述：简要说明该类功能 <br>
  * 详细描述：<br>

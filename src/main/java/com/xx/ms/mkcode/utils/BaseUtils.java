@@ -1,4 +1,4 @@
-package com.xim.ms.mkcode.utils;
+package com.xx.ms.mkcode.utils;
 
 import java.math.BigDecimal;
 import java.util.Map;

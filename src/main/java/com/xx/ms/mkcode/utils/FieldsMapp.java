@@ -1,8 +1,8 @@
-package com.xim.ms.mkcode.utils;
+package com.xx.ms.mkcode.utils;
 import java.util.HashMap;
 import java.util.Map;
 
-import com.xim.ms.mkcode.utils.BaseUtils;
+import com.xx.ms.mkcode.utils.BaseUtils;
 
 /**
  * 简述：字段类型映射<br>

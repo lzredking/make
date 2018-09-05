@@ -1,4 +1,4 @@
-package com.xim.ms.mkcode.utils;
+package com.xx.ms.mkcode.utils;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

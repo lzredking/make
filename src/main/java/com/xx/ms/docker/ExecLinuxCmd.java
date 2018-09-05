@@ -1,4 +1,4 @@
-package com.xim.ms.docker;
+package com.xx.ms.docker;
 import java.io.File;
 import java.io.InputStreamReader;
 import java.io.LineNumberReader;

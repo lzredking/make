@@ -1,4 +1,4 @@
-package com.xim.ms.docker;
+package com.xx.ms.docker;
 
 import java.io.BufferedReader;
 import java.io.ByteArrayOutputStream;

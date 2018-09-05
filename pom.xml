@@ -47,7 +47,7 @@
 						<manifest>
 							<addClasspath>true</addClasspath>
 							<classpathPrefix>lib/</classpathPrefix>
-							<mainClass>com.xim.ms.mkcode.ServerMain</mainClass>
+							<mainClass>com.xx.ms.mkcode.ServerMain</mainClass>
 						</manifest>
 					</archive>
 				</configuration>

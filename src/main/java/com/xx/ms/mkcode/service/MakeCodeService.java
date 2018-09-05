@@ -1,4 +1,4 @@
-package com.xim.ms.mkcode.service;
+package com.xx.ms.mkcode.service;
 
 import java.io.File;
 import java.sql.Connection;
@@ -11,12 +11,12 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import com.xim.ms.mkcode.bean.Table;
-import com.xim.ms.mkcode.bean.TableCols;
-import com.xim.ms.mkcode.utils.BaseUtils;
-import com.xim.ms.mkcode.utils.FieldsMapp;
-import com.xim.ms.mkcode.utils.FileUtils;
-import com.xim.ms.mkcode.utils.VelocityUtils;
+import com.xx.ms.mkcode.bean.Table;
+import com.xx.ms.mkcode.bean.TableCols;
+import com.xx.ms.mkcode.utils.BaseUtils;
+import com.xx.ms.mkcode.utils.FieldsMapp;
+import com.xx.ms.mkcode.utils.FileUtils;
+import com.xx.ms.mkcode.utils.VelocityUtils;
 
 public class MakeCodeService {
 

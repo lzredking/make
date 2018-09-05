@@ -1,4 +1,4 @@
-package com.xim.ms.mkcode.bean;
+package com.xx.ms.mkcode.bean;
 
 import java.io.Serializable;
 
