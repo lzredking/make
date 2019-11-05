@@ -2,7 +2,7 @@
 
 
 import $!{tab.pkgBean}.$!{tab.clsName};
-import com.vphoto.mall.$!{tab.model}.provider.metadata.mybatis.IBaseMapperDao;
+import com.vphoto.mall.orm.mybatis.IBaseMapperDao;
 import org.springframework.stereotype.Repository;
 
 /**

@@ -86,7 +86,7 @@ public class MakeCodeService {
 			}
 			if(makeFlg.get("bo")) {
 				//==生成模型 bo
-				tmpFilePath = fileSrcPath + "/../remote/pojo/"+tab.getModel() +"/"+ tab.getClsName() + "VO.java";
+				tmpFilePath = fileSrcPath + "/../api/pojo/"+tab.getModel() +"/"+ tab.getClsName() + "VO.java";
 				String log = makeFile(tmpFilePath, tmpPath, "bo.vm", names, values, "}");
 				sb.append(log);
 			}
@@ -122,7 +122,7 @@ public class MakeCodeService {
 			}
 			if(makeFlg.get("mapping")) {
 				//==生成mapper
-				tmpFilePath = fileSrcPath + "/../remote/call/v1/"+tab.getModel() +"/I"+ tab.getClsName() + "RemoteCall.java";
+				tmpFilePath = fileSrcPath + "/../api/call/v1/"+tab.getModel() +"/I"+ tab.getClsName() + "RemoteCall.java";
 				String log = makeFile(tmpFilePath, tmpPath, "mapping.vm", names, values, "}");
 				sb.append(log);
 			}

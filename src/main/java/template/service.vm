@@ -9,7 +9,7 @@ import org.springframework.transaction.annotation.Transactional;
 import $!{tab.pkgBean}.$!{tab.clsName};
 //import $!{tab.pkgDao}.I$!{tab.clsName}Dao;
 import $!{tab.ipkgService}.I$!{tab.clsName}Service;
-import com.vphoto.mall.$!{tab.model}.provider.service.impl.BaseService;
+import com.vphoto.mall.provider.service.impl.BaseService;
 import $!{tab.pkgBo}.$!{tab.clsName}VO;
 #if($!{tab.idMake}=='0'||$!{tab.bussKey})		
 #import com.ms.common.component.IDUtile;
@@ -20,7 +20,7 @@ $!{imp}
 import com.vphoto.mall.common.CheckUtils;
 import com.vphoto.mall.common.BaseUtils;
 import com.vphoto.mall.common.DateUtils;
-import com.vphoto.mall.$!{tab.model}.remote.pojo.page.PageInfo;
+import com.v.photos.framework.result.RestResult.PageInfo;
 import com.vphoto.mall.$!{tab.model}.remote.pojo.page.ReqPage;
 
  /**
@@ -191,7 +191,7 @@ public class $!{tab.clsName}Service extends BaseService<$!{tab.clsName}> impleme
 	}
 #end	
 	@Override
-	public PageInfo getPages(ReqPage<$!{tab.clsName}VO> page){
+	public PageInfo<$!{tab.clsName}VO> getPages(ReqPage<$!{tab.clsName}VO> page){
 		StringBuilder hql=new StringBuilder("from $!{tab.clsName} m where m.delTag=?");
 		$!{tab.clsName}VO vo=page.getObj();
 		List<Object> paras=new ArrayList<Object>();
@@ -203,7 +203,7 @@ public class $!{tab.clsName}Service extends BaseService<$!{tab.clsName}> impleme
 		}
 		
 		hql.append(" order by m.id desc");
-		return super.getPages(page.getPageIndex(), page.getPageSize(), hql.toString(), paras.toArray());
+		return super.getPages($!{tab.clsName}VO.class,page.getPageIndex(), page.getPageSize(), hql.toString(), paras.toArray());
 	}
 	//<!-- [=下面是业务自定义代码=] -->
 

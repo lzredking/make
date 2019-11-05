@@ -1,9 +1,9 @@
 ﻿package $!{tab.ipkgService};
 
-import com.vphoto.mall.$!{tab.model}.remote.pojo.page.PageInfo;
+import com.v.photos.framework.result.RestResult.PageInfo;
 import com.vphoto.mall.$!{tab.model}.remote.pojo.page.ReqPage;
 import $!{tab.pkgBean}.$!{tab.clsName};
-import com.vphoto.mall.$!{tab.model}.provider.service.IBaseService;
+import com.vphoto.mall.provider.service.IBaseService;
 import $!{tab.pkgBo}.$!{tab.clsName}VO;
 /**
  * 备注：$!{tab.table_comment}
@@ -17,7 +17,7 @@ public interface I$!{tab.clsName}Service extends IBaseService<$!{tab.clsName}> {
      * @param page
      * @return
      */
-	public PageInfo getPages(ReqPage<$!{tab.clsName}VO> page);
+	public PageInfo<$!{tab.clsName}VO> getPages(ReqPage<$!{tab.clsName}VO> page);
 	
 	/**保存数据
 	 * @param vo

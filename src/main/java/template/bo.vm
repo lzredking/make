@@ -4,7 +4,7 @@
 $!{imp}
 #end
 
-import com.vphoto.mall.$!{tab.model}.remote.pojo.BaseVO;
+import com.vphoto.mall.$!{tab.model}.api.pojo.BaseVO;
 
 
 /**

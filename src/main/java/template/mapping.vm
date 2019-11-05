@@ -7,7 +7,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 import $!{tab.pkgBo}.$!{tab.clsName}VO;
 import com.vphoto.mall.$!{tab.model}.remote.pojo.page.ReqPage;
-import com.vphoto.mall.$!{tab.model}.remote.result.ResBean;
+import com.v.photos.framework.result.RestResult;
+import com.v.photos.framework.result.RestResult.PageInfo;
 
 import org.springframework.cloud.openfeign.FeignClient;
 /**
@@ -30,7 +31,7 @@ public interface I$!{tab.clsName}RemoteCall  {
 	 * @
 	 */
 	@RequestMapping(value="/$!{tab.instName}/insert",method={RequestMethod.POST})
-	public ResBean insert(@RequestBody $!{tab.clsName}VO vo) ;
+	public RestResult<$!{tab.clsName}VO> insert(@RequestBody $!{tab.clsName}VO vo) ;
 	
 	/**
 	 * 更新实体
@@ -39,7 +40,7 @@ public interface I$!{tab.clsName}RemoteCall  {
 	 * @
 	 */
 	@RequestMapping(value="/$!{tab.instName}/update",method={RequestMethod.POST})
-	public ResBean update(@RequestBody $!{tab.clsName}VO vo) ;
+	public RestResult<$!{tab.clsName}VO> update(@RequestBody $!{tab.clsName}VO vo) ;
 	
 	
 	/**
@@ -48,7 +49,7 @@ public interface I$!{tab.clsName}RemoteCall  {
 	 * @
 	 */
 //	@RequestMapping(value="/$!{tab.instName}/delete",method={RequestMethod.POST})
-//	public ResBean delete(@RequestBody String ids) ;
+//	public RestResult<$!{tab.clsName}VO> delete(@RequestBody String ids) ;
 	
 	/**
 	 * 根据id查询单个信息  <br>
@@ -57,7 +58,7 @@ public interface I$!{tab.clsName}RemoteCall  {
 	 * @throws Exception
 	 */
 	@RequestMapping(value="/$!{tab.instName}/getOne",method={RequestMethod.POST})
-    public ResBean getOne(@RequestBody Long id) throws Exception;
+    public RestResult<$!{tab.clsName}VO> getOne(@RequestBody Long id) throws Exception;
 	
 	
 	
@@ -68,7 +69,7 @@ public interface I$!{tab.clsName}RemoteCall  {
 	 * @
 	 */
 	@RequestMapping(value="/$!{tab.instName}/list",method={RequestMethod.POST}) // 
-    public ResBean listAllAsPage(@RequestBody ReqPage<$!{tab.clsName}VO> page) ;
+    public RestResult<PageInfo<$!{tab.clsName}VO>> listAllAsPage(@RequestBody ReqPage<$!{tab.clsName}VO> page) ;
 	
 	//<!-- [=下面是业务自定义代码=] -->
 	
